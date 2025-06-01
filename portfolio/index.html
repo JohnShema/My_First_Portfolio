@@ -1,258 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <title>Shema John - Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to my portfolio</h1>
-
-      <hr />
-
-      <nav>
-        <ul>
-          <li><a href="#projects">My Projects</a></li>
-          <li><a href="#skills">My Skills</a></li>
-          <li><a href="#contactMe">Contact Me</a></li>
-        </ul>
-      </nav>
+      <h1>Shema John</h1>
+      <p>
+        Web Developer | Educating and empowering through web development
+        tutorials
+      </p>
     </header>
-    <main>
-      <article id="projects">
-        <section>
-          <h2>Projects I'm working on</h2>
-          <p>This is a space to showcase my web development</p>
-          <figure>
-            <img
-              src="command_line.png"
-              alt="CLI thumbanail"
-              width="300"
-              height="200"
-              loading="lazy"
-              title="my first YouTube Video thumbanail"
-            />
-          </figure>
-        </section>
-        <section>
-          <h3>Daily Routine</h3>
-          <ol>
-            <li>I write down my goals each morning</li>
-            <li>I study and build small projects daily.</li>
-            <li>
-              I explore new tips from
-              <abbr title="Mozilla Developer Network"
-                ><a href="https://developer.mozilla.org" target="_blank"
-                  >MDN</a
-                ></abbr
-              >
-            </li>
-          </ol>
-          <aside>
-            <details>
-              <summary>Guess how many hours I code per day</summary>
-              <p>
-                I code everyday morning from 8:00 am and code like for 3 hours
-              </p>
-            </details>
-          </aside>
-        </section>
+
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        Hi, I'm Shema John — a passionate Web Developer and tech educator from
+        Rwanda. I specialize in creating beginner-friendly, high-quality web
+        development tutorials on YouTube to help others grow in tech.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="project">
+        <h3>Web Dev Tutorials (YouTube)</h3>
+        <p>
+          A growing collection of short, practical tutorials on HTML, CSS,
+          JavaScript, Git, and more. Focused on helping beginners build real
+          skills fast.
+        </p>
+        <a href="#" target="_blank">Watch Tutorials</a>
+        <!-- Replace # with your YouTube channel link -->
       </article>
-
-      <hr />
-
-      <article id="skills">
-        <section>
-          <h2>My web development skills</h2>
-          <p>
-            I am passionate about learning and <em>growing my tech skills</em>
-          </p>
-          <p>
-            I am based in <abbr title="Kigali, Rwanda">KGL</abbr> and love to
-            code!
-          </p>
-        </section>
-
-        <section>
-          <h3>Skills I'm building</h3>
-          <ul>
-            <li><p>HTML5 & Semantics</p></li>
-            <li>
-              <p>Learning via ALX and personal practice:</p>
-              <address>
-                ALX Africa <br />
-                Kigali Tech Hub <br />
-                Rwanda, East Africa
-              </address>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Skills I don't use yet</h3>
-          <dl>
-            <dt>CSS Frameworks</dt>
-            <dd>I haven't started learning these yet.</dd>
-            <dt>JavaScript</dt>
-            <dd>This will come later in the journey.</dd>
-            <dt>Backend Tech</dt>
-            <dd>Still focusing on frontend basics for now.</dd>
-          </dl>
-        </section>
+      <article class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          A responsive portfolio site built with semantic HTML and styled with
+          modern CSS, showcasing my web projects and educational content.
+        </p>
+        <a href="#" target="_blank">View Portfolio</a>
+        <!-- Replace # with your portfolio link if available -->
       </article>
+    </section>
 
-      <article id="contactMe">
-        <h2>Contact Me</h2>
-        <p>I woul like to hear from you</p>
-        <fieldset>
-          <legend>personal Info</legend>
-          <form action="">
-            <p>
-              <label for="firstName">First Name</label>
-              <input
-                type="text"
-                id="fistName"
-                name="firstName"
-                required
-                autocomplete="on"
-                autofocus
-                placeholder="Enter your first name"
-              />
-            </p>
-            <p>
-              <label for="SecondName">Second Name</label>
-              <input
-                type="text"
-                id="SecondName"
-                name="SecondName"
-                required
-                autocomplete="on"
-                placeholder="Enter your second name"
-              />
-            </p>
-            <p>
-              <label for="password">Password</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                required
-                placeholder="Enter your password"
-              />
-            </p>
-            <p>
-              <label for="phone">Phone number</label>
-              <input
-                type="phone"
-                id="phone"
-                name="phone"
-                required
-                placeholder="eg: 0782641939"
-                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
-              />
-            </p>
-            <p>
-              <label for="bith_year">Birth_year</label>
-              <input
-                type="number"
-                id="number"
-                name="number"
-                required
-                min="1990"
-                max="2025"
-                step="1"
-                value="2025"
-              />
-            </p>
-            <p>
-              <label for="nationality">Nationality</label>
-              <select name="nationality" id="nationality">
-                <optgroup label=" Africa">
-                  <option value="Rwanda">Rwanda</option>
-                  <option value="Kenya">Kenya</option>
-                  <option value="Nigeria">Nigeria</option>
-                </optgroup>
-                <optgroup label=" Asia">
-                  <option value="India">India</option>
-                  <option value="China">China</option>
-                </optgroup>
-                <optgroup label=" America">
-                  <option value="USA">USA</option>
-                  <option value="Canada">Canada</option>
-                </optgroup>
-              </select>
-            </p>
-          </form>
-        </fieldset>
-        <br />
-        <fieldset>
-          <legend>Fav Fruit</legend>
-          <p>
-            <input type="radio" name="fruit" id="apple" value="apple" />
-            <label for="apple">Apple</label>
-          </p>
-          <p>
-            <input type="radio" name="fruit" id="mango" value="mango" />
-            <label for="mango">mango</label>
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Hobie</legend>
-          <p>
-            <input
-              type="checkbox"
-              name="hobie"
-              id="football"
-              value="football"
-            />
-            <label for="football">Football</label>
-          </p>
-          <p>
-            <input
-              type="checkbox"
-              name="hobie"
-              id="Basketball"
-              value="Basketball"
-            />
-            <label for="Basketball">Basketball</label>
-          </p>
-          <p>
-            <input
-              type="checkbox"
-              name="hobie"
-              id="otherHobie"
-              value="otherHobie"
-            />
-            <label for="otherHobie">Other</label>
-          </p>
-        </fieldset>
-        <br />
-        <fieldset>
-          <legend>Message</legend>
-          <p>
-            <label for="message">Enter your message</label>
-          </p>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="write your message here"
-          ></textarea>
-          <p>
-            <button type="submit">submit</button>
-            <button type="reset">Reset</button>
-          </p>
-        </fieldset>
-      </article>
-    </main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a Civil Engineer turned Web Developer with a passion for teaching
+        and problem-solving:
+      </p>
+      <ul>
+        <li>Web Technologies: HTML, CSS, JavaScript, Git & GitHub</li>
+        <li>Teaching: Simplifying complex tech concepts for beginners</li>
+        <li>
+          Career Goals: Building tools, platforms, and content that empower
+          learners worldwide
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Let’s connect: <a href="mailto:shemajohnn@gmail.com">Email me</a></p>
+    </section>
 
     <footer>
-      <hr />
-
-      &lt;&lt;&lt; &copy; <a href="about.html">Shema John</a> &gt;&gt;&gt;
-      <p><a href="#">Back to Top</a></p>
+      <p>&copy; 2025 Shema John. All rights reserved.</p>
     </footer>
   </body>
 </html>
